@@ -1,7 +1,6 @@
 body {
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
-    'Lucida Grande', sans-serif;
-  font-weight: 300;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -29,5 +28,47 @@ nav a {
 }
 
 .content {
-  padding: 1rem;
+  /*padding: 1rem;*/
+}
+
+h1 {
+  margin: 0;
+  color: #373434;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.fullsection {
+  width: 100vw;
+  height: 100vh;
+}
+
+.fullsection--light {
+  background-image: linear-gradient(135deg, rgba(144, 169, 0, 0.32) 0%, rgba(0, 184, 163, 0.32) 100%);
+}
+
+.button {
+  background-image: linear-gradient(135deg, #90A900 0%, #00B8A3 100%);
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom-3 {
+  margin-bottom: 3rem;
+}
+
+.margin-top-3 {
+  margin-top: 3rem;
 }
