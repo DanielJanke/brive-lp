@@ -1,12 +1,14 @@
- const ColorDefinitons = {
-    white: '#fff',
-    dark: '#373434',
-}
+const ColorDefinitons = {
+  white: "#fff",
+  dark: "#373434"
+};
 
 const Defintions = {
-    boxBackgroundColor: ColorDefinitons.white,
-}
+  boxBackgroundColor: ColorDefinitons.white,
+  textColorDark: ColorDefinitons.dark,
+  textColorLight: ColorDefinitons.white
+};
 
- const Colors = {...ColorDefinitons, ...Defintions}
+const Colors = { ...ColorDefinitons, ...Defintions };
 
 export default Colors;

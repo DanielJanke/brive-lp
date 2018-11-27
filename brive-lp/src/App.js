@@ -5,22 +5,27 @@ import { hot } from "react-hot-loader";
 import Routes from "react-static-routes";
 
 import "./app.css";
+import { setConfiguration } from "react-grid-system";
+import { containerWidthsConfid } from "./assets/styleconfig";
 
-const App = () => (
-  <Router>
-    <div>
-      {/*<nav>*/}
+const App = () => {
+  setConfiguration(containerWidthsConfid);
+  return (
+    <Router>
+      <div>
+        {/*<nav>*/}
         {/*<Link exact to="/">*/}
-          {/*Home*/}
+        {/*Home*/}
         {/*</Link>*/}
         {/*<Link to="/about">About</Link>*/}
         {/*<Link to="/blog">Blog</Link>*/}
-      {/*</nav>*/}
-      <div className="content">
-        <Routes />
+        {/*</nav>*/}
+        <div className="content">
+          <Routes />
+        </div>
       </div>
-    </div>
-  </Router>
-);
+    </Router>
+  );
+};
 
 export default hot(module)(App);

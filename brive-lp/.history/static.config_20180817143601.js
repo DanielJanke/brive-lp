@@ -2,22 +2,15 @@ import axios from 'axios'
 
 export default {
   getSiteData: () => ({
-    title: 'BRIVE',
+    title: 'React Static',
   }),
   getRoutes: async () => {
-    const { data: posts } = await axios.get('https://jsonplaceholder.typicode.com/posts')
+    const { data: posts } = await axios.get(
+      'https://jsonplaceholder.typicode.com/posts'
+    )
     return [
       {
-        path: '/',
-        component: 'src/containers/Home',
-      },
-      {
-        path: '/about',
-        component: 'src/containers/About',
-      },
-      {
         path: '/blog',
-        component: 'src/containers/Blog',
         getData: () => ({
           posts,
         }),
@@ -30,8 +23,10 @@ export default {
         })),
       },
       {
-        is404: true,
-        component: 'src/containers/404',
+        path: '404',
+        getData: () => ({
+          posts,
+        }),
       },
     ]
   },

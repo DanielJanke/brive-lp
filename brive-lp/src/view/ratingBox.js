@@ -2,39 +2,49 @@ import React from "react";
 import styled from "styled-components";
 import Colors from "../assets/colors";
 import { Text, BoxTitle, BoxGreyNumber } from "../assets/primitives";
+import PieChart from "react-minimal-pie-chart";
 
-export default function Box({ number, headline, text }) {
+export default function RatingBox({ headline, score }) {
   return (
     <Wrapper>
       <BoxStyle>
-        <BoxGreyNumber>{number}</BoxGreyNumber>
         <BoxTitle>{headline}</BoxTitle>
-        <Text style={{ textAlign: "center", fontSize: 16 }}>{text}</Text>
+        <PieChart
+          startAngle={-90}
+          lineWidth={13}
+          totalValue={100}
+          rounded
+          lengthAngle={-360}
+          data={[
+            { title: "One", value: 100 - score, color: "#FF5E00" },
+            { title: "One", value: score, color: "#39FF9A" }
+          ]}
+        />
       </BoxStyle>
       <BoxShadow />
     </Wrapper>
   );
 }
 
-const Wrapper = styled.div`
-  display: flex;
-`;
+const Wrapper = styled.div``;
 
 const BoxStyle = styled.div`
   background-color: ${Colors.boxBackgroundColor};
   border-radius: 8px;
   padding: 0.5rem;
   position: relative;
-  //height: 264px;
+  //height: 235px;
+  //width: 235px;
   transition: all 0.2s;
   z-index: 1000;
+  margin: 0.5rem 0;
 `;
 
 const BoxShadow = styled.div`
   background: rgba(0, 0, 0, 0.15);
   position: absolute;
   width: 80%;
-  height: 80%;
+  height: 235px;
   bottom: -0rem;
   border-radius: 8px;
   filter: blur(11px);

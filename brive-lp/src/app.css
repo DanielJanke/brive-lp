@@ -47,15 +47,6 @@ h1 {
   background-image: linear-gradient(135deg, rgba(144, 169, 0, 0.32) 0%, rgba(0, 184, 163, 0.32) 100%);
 }
 
-.button {
-  background-image: linear-gradient(135deg, #90A900 0%, #00B8A3 100%);
-  display: inline-block;
-  color: white;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  font-weight: 600;
-}
 
 .margin-bottom-1 {
   margin-bottom: 1rem;

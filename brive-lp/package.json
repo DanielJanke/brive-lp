@@ -7,24 +7,30 @@
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
-    "serve": "serve dist -p 3000"
+    "serve": "serve dist -p 3000",
+    "format": "prettier --write 'src/**/*.js'"
   },
   "dependencies": {
     "@ibm/plex": "^1.2.1",
     "axios": "^0.16.2",
     "extract-text-webpack-plugin": "^3.0.2",
-    "prettier": "^1.15.1",
+    "nuka-carousel": "^4.4.3",
+    "prettier": "^1.15.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-grid-system": "^4.3.1",
+    "react-minimal-pie-chart": "^3.3.0",
+    "react-pose": "^4.0.2",
     "react-router": "^4.2.0",
-    "react-static": "^5.9.8",
+    "react-static": "^5.9.12",
     "styled-components": "^4.0.3",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "eslint-config-react-tools": "1.x.x",
+    "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.9.3",
+    "prettier": "1.15.2",
     "sass-loader": "^7.1.0",
     "serve": "^6.1.0"
   }
