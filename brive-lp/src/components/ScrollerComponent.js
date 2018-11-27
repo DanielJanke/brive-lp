@@ -3,17 +3,30 @@ import styled from "styled-components";
 import posed from "react-pose";
 
 export default class ScrollerComponent extends Component {
+  state = {
+    toggle: true
+  }
+
+  _toggleState = () => {
+    this.setState({toggle: !this.state.toggle})
+  }
+
   render() {
     return (
+      <React.Fragment>
       <Wrapper>
-        <AnimatedWrapperStyle pose="loop">
+        <AnimatedWrapperStyle pose={this.state.toggle? 'loop' : 'noloop'}>
           <Filler />
           <Filler />
           <Filler />
           <Filler />
           <Filler />
         </AnimatedWrapperStyle>
+
       </Wrapper>
+        <button style={{marginTop: 160}} onClick={this._toggleState}>Toggle</button>
+
+      </React.Fragment>
     );
   }
 }
@@ -21,6 +34,7 @@ export default class ScrollerComponent extends Component {
 const Wrapper = styled.div`
   position: absolute;
   display: flex;
+  z-index: 10;
 `;
 
 const Filler = styled.div`
@@ -31,8 +45,8 @@ const Filler = styled.div`
 `;
 
 const AnimatedWrapper = posed.div({
-  loop: { transform: `translateX: -10%` },
-  noloop: { transform: `translateX: 0` }
+  loop: { x: '0%' },
+  noloop: { x: '100%'}
 });
 
 const AnimatedWrapperStyle = styled(AnimatedWrapper)`
