@@ -18,14 +18,16 @@ const RewardSection = () => (
             <BigNumber>{Strings.landingPage.rewardSection.number}</BigNumber>
           </Col>
         </Row>
-        <Row>
+        <Row align='center'>
           <Col xs={12}>
             <Title2>{Strings.landingPage.rewardSection.title}</Title2>
           </Col>
           <Col xs={12} sm={6} offset={{ sm: 3 }}>
             <Text>{Strings.landingPage.rewardSection.description}</Text>
           </Col>
-          <img src={card} />
+          <CCContainer>
+            <img src={card} />
+          </CCContainer>
         </Row>
       </Container>
     </NoSkew>
@@ -48,3 +50,9 @@ const CarouselWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+
+const CCContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  `

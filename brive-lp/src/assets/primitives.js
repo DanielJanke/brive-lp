@@ -62,3 +62,14 @@ export const BoxTitle = styled.p`
   text-align: center;
   font-weight: 800;
 `;
+
+export const ChartNumber = styled.p `
+font-size: 50px;
+color: #373434;
+`
+export const ChartDescription = styled.p`
+font-size: 16px;
+color: #6E6E6E;
+line-height: 22px;
+font-weight: 200;
+ `

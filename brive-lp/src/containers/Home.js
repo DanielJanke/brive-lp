@@ -24,6 +24,7 @@ import AnalyseSection from "../sections/1_analyseSection";
 import RatingSection from "../sections/2_ratingSection";
 import RewardSection from "../sections/3_rewardSection";
 import ScrollerComponent from "../components/ScrollerComponent";
+import ImprovementSection from "../sections/4_improvementSection";
 
 export default class Home extends Component {
   constructor(props) {
@@ -42,10 +43,11 @@ export default class Home extends Component {
         <AnalyseSection />
         <RatingSection />
         <RewardSection />
-        <ScrollerComponent />
+        {/*<ScrollerComponent />*/}
+        <ImprovementSection/>
         <AdvantagesSection />
         <SupportSection />
-        <FaqSection />
+        {/*<FaqSection />*/}
         <ContactSection />
         <SectionLight />
       </React.Fragment>

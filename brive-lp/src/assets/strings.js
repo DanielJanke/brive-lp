@@ -82,6 +82,11 @@ const strings = {
       description:
         "Aus der Bewertung und der Veränderung des Fahrstils zum Vormonat brechnet BRIVE einen Geldbetrag, der dem Fahrer auf eine steuerfrei als Sachleistung auf eine eigene Kreditkarte übertragen wird."
     },
+    improvementSection: {
+      number: 4,
+      title: 'Die Effizenz der Flotte steigert sich signifikant',
+      description: 'Aus der Bewertung und der Veränderung des Fahrstils zum Vormonat brechnet BRIVE einen Geldbetrag, der dem Fahrer auf eine steuerfrei als Sachleistung auf eine eigene Kreditkarte übertragen wird.',
+    },
     advantages: {
       title: "Weitere Vorteile mit der Nutzung von BRIVE für ihre Flotte",
       sections: [
@@ -106,7 +111,7 @@ const strings = {
       ]
     },
     support: {
-      title: "Geförtdert durch",
+      title: "Gefördert durch",
       eu: "europaeische_union_sozialfonds.png",
       efre: "efre.png",
       bss: "berliner_startup_stipendium.png",

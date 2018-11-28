@@ -5,10 +5,11 @@ import logoImg from "../assets/img/brive_logo.png";
 import { Title1, Title2, Text } from "../assets/primitives";
 import Strings from "../assets/strings";
 import Box from "../view/box";
+import styled from "styled-components";
 
 const AdvantagesSection = () => {
   return (
-    <SectionLight>
+    <SectionLightMargin>
       <Container>
         <Row>
           <Col xs={12} sm={5} style={{ marginBottom: 16 }}>
@@ -31,8 +32,13 @@ const AdvantagesSection = () => {
           })}
         </Row>
       </Container>
-    </SectionLight>
+    </SectionLightMargin>
   );
 };
 
 export default AdvantagesSection;
+
+const SectionLightMargin = styled(SectionLight)`
+  margin: -8rem 0 0 0;
+  padding: 14rem 0 0 0;
+  `
