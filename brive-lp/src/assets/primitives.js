@@ -63,13 +63,21 @@ export const BoxTitle = styled.p`
   font-weight: 800;
 `;
 
-export const ChartNumber = styled.p `
-font-size: 50px;
-color: #373434;
-`
+export const ChartNumber = styled.p`
+  font-size: 50px;
+  color: #373434;
+`;
 export const ChartDescription = styled.p`
-font-size: 16px;
-color: #6E6E6E;
-line-height: 22px;
-font-weight: 200;
- `
+  font-size: 16px;
+  color: #6e6e6e;
+  line-height: 22px;
+  font-weight: 200;
+`;
+
+export const ScoringPoints = styled.p`
+  font-weight: 600;
+  font-size: 19.2px;
+  color: #4a4a4a;
+  text-align: center;
+  margin: 0.5rem;
+`;

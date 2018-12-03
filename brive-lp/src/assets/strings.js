@@ -2,38 +2,38 @@ const strings = {
   landingPage: {
     header: {
       headline:
-        "BRIVE hilft Fahrzeugflotten mit Telematik im Smartphone effizenter zu machen. Von Anfang bis Ende",
+        "BRIVE hilft Fahrzeugflotten effizienter zu machen.",
       button: "Kontaktieren"
     },
     intro: {
-      headline: "Den größten Anteil von Flottenkosten haben ihre Fahrer",
+      headline: "Den größten Anteil an Flottenkosten haben ihre Fahrer",
       text:
-        "Umso wichtiger sind deshalb motivierte Mitarbeiter, die mit Ihrer Fahrweise Rücksicht auf die Fahrzeuge, die laufenden Kosten und die Umwelt nehmen. BRIVE hilft dabei Mitarbeiter zu nachhaltig zu trainieren und motivieren um die Kosten von Flotte signifikant zu senken."
+        "Umso wichtiger sind deshalb motivierte Mitarbeiter, die mit Ihrer Fahrweise Rücksicht auf die Fahrzeuge, die laufenden Kosten und die Umwelt nehmen. BRIVE hilft dabei Mitarbeiter nachhaltig zu motivieren, um die Kosten Ihrer Flotte signifikant zu senken. "
     },
     hotItWorks: {
-      headline: "Wie BRIVE Fahrzeugflotten effizenter macht",
+      headline: "Wie BRIVE Fahrzeugflotten effizienter macht",
       text:
-        "BRIVE besteht aus mehreren Kompontenten: Der Analyse, der Bewertung und der anschließenden Belohnung der Fahrer.",
+        "BRIVE besteht aus mehreren Komponenten: Analyse, Bewertung und anschließende Belohnung der Fahrer.",
       boxes: [
         {
           title: "Analyse",
           text:
-            "Die BRIVE App liest die Sensoren im Smartphone aus und bereitet ihre Daten auf."
+            "Die BRIVE App liest die Sensoren im Smartphone aus und bereitet die Daten auf."
         },
         {
           title: "Bewertung",
           text:
-            "Algorithmen berechnen anhand der Sensoren eine Bewertung des Fahrstils für den Fahrer."
+            "Algorithmen berechnen anhand der Sensoren eine Bewertung des Fahrstils für den einzelnen Fahrer."
         },
         {
           title: "Belohnung",
           text:
-            "Algorithmen berechnen anhand der Sensoren eine Bewertung des Fahrstils für den Fahrer."
+            "Aus der Bewertung ergibt sich ein Bonus, den der Fahrer auf die BRIVE Kreditkarte steuerfrei überwiesen bekommt."
         },
         {
           title: "Verbesserung",
           text:
-            "Fahrer werden je nach dem wie gut sie gefahren sind mit einem steuerfreien Bonus belohnt."
+            "Je besser der Fahrstil, desto größer ist die Ersparnis für Ihre Flotte."
         }
       ]
     },
@@ -41,14 +41,14 @@ const strings = {
       number: 1,
       title: "Analyse von Sensorwerten aus dem Smartphone",
       description:
-        "BRIVE nutzt eine vielzahl von Sensoren im Smartphone um herauszufinden wie gut ein Fahrer sein Fahrzeug fährt. Anhand dieser werden Ereignisse berechnet, die einen Aufschluss auf das Fahrverhalten geben (z.B. stark gebremst, Geschwindigkeitsüberschreitung).",
+        "BRIVE nutzt eine Vielzahl von Sensoren im Smartphone, um herauszufinden wie das Fahrzeug gefahren wird. Anhand dieser Sensoren werden Ereignisse berechnet, die einen Aufschluss über das Fahrverhalten geben (z.B. starke Bremsung oder Geschwindigkeitsüberschreitung).",
       img: ""
     },
     ratingSection: {
       number: 2,
       title: "Bewertung des Fahrstils verständlich gemacht",
       description:
-        "Aus den Eregnissen berechnen die BRIVE Algorithmen Punktzahlen in verschiedenen Kategorien, die für den Fahrer verständlich gemacht werden. Daraus können sie Schlüsse auf ihre Fahrweise machen und sich punktuell verbessern und somit die Flotteneffizienz gleichzeitig steigern.",
+        "Aus den Ereignissen berechnet BRIVE Punktzahlen in verschiedenen Kategorien, die für den Fahrer verständlich dargestellt werden. Daraus erhalten sie Einblicke in ihre Fahrweise und können sich gezielt verbessern. Sie profitieren von gesteigerter Flotteneffizienz.",
       sections: [
         {
           title: "Anfahrverhalten",
@@ -80,12 +80,13 @@ const strings = {
       number: 3,
       title: "Belohnung berechnet nach der Qualität des Fahrstils",
       description:
-        "Aus der Bewertung und der Veränderung des Fahrstils zum Vormonat brechnet BRIVE einen Geldbetrag, der dem Fahrer auf eine steuerfrei als Sachleistung auf eine eigene Kreditkarte übertragen wird."
+        "Aus der Bewertung des Fahrstils berechnet BRIVE einen Geldbetrag, der dem Fahrer als steuerfreie Sachleistung auf die BRIVE Kreditkarte überwiesen wird."
     },
     improvementSection: {
       number: 4,
-      title: 'Die Effizenz der Flotte steigert sich signifikant',
-      description: 'Aus der Bewertung und der Veränderung des Fahrstils zum Vormonat brechnet BRIVE einen Geldbetrag, der dem Fahrer auf eine steuerfrei als Sachleistung auf eine eigene Kreditkarte übertragen wird.',
+      title: "Die Effizienz der Flotte steigert sich signifikant",
+      description:
+        "Einsparungen bei Verbrauch, Unfallkosten und Kosten für Wartung und Verschleiß steigern die Profitabilität Ihrer Flotte. Gleichzeitig motivieren Sie Ihre Mitarbeiter durch zusätzliche Gehaltsleistungen. "
     },
     advantages: {
       title: "Weitere Vorteile mit der Nutzung von BRIVE für ihre Flotte",
@@ -94,19 +95,19 @@ const strings = {
           icon: "",
           title: "Höhere Mitarbeiterzufriedenheit",
           description:
-            "Durch den ausgezahlten Bonus steigert sich nicht nur die Effizienz ihrer Flotte, sondern gleichzeitig auch die Zufriedenheit ihrer Mitarbeiter. Dadurch findet wengier Fluktuation bei Mitarbeitern statt."
+            "Durch den ausgezahlten Bonus steigert sich nicht nur die Effizienz ihrer Flotte, sondern gleichzeitig auch die Zufriedenheit ihrer Mitarbeiter."
         },
         {
           icon: "",
           title: "BRIVE berücksichtigt ihre Bewertungsfaktoren mit",
           description:
-            "BRIVE beschränkt sich nicht nur auf die Fahrweise an sich. Sollten weitere Faktoren wie z.B. Kunden-zufriedenheit (bei Taxifahren) berücksichtigt werden - ist dies möglich."
+            "BRIVE beschränkt sich nicht nur auf die Fahrweise an sich. Sollten weitere Faktoren wie z.B. Kunden-zufriedenheit oder Pünktlichkeit berücksichtigt werden – ist dies einfach möglich."
         },
         {
           icon: "",
-          title: "HOHER DATENSCHUTZ FÜR IHRE MITARBEITER",
+          title: "WER MÖCHTE SCHON ÜBERWACHT WERDEN?",
           description:
-            "Weder die Mitarbeiter von BRIVE, noch der Arbeitgeber erhalten einen direkten Zugriff auf die Daten. Die Daten ihrer Fahrer werden mit größter sorgfalt behandelt."
+            "BRIVE nimmt Ihnen die Arbeit Ihrer Flotte ab und informiert Sie auf Flottenebene über den Fortschritt. Überwachung der Mitarbeiter durch den Arbeitgeber ist somit unmöglich."
         }
       ]
     },
@@ -114,8 +115,10 @@ const strings = {
       title: "Gefördert durch",
       eu: "europaeische_union_sozialfonds.png",
       efre: "efre.png",
+      berlin: "berlin.png",
       bss: "berliner_startup_stipendium.png",
-      pt: "project_together.png"
+      pt: "project_together.png",
+      zu: "zu.png"
     },
     faq: {
       headline: "Häufige Fragen",
@@ -132,7 +135,7 @@ const strings = {
         },
         {
           question:
-            "Um wieviel Prozent werden Flotten effizenter wenn sie BRIVE nutzen?",
+            "Um wieviel Prozent werden Flotten effizienter wenn sie BRIVE nutzen?",
           answer:
             "Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? "
         },
@@ -156,14 +159,14 @@ const strings = {
     },
     contact: {
       headline:
-        "Machen Sie Ihre Flotten effizenter. \n" +
+        "Machen Sie Ihre Flotte effizienter. \n" +
         "BRIVE kommt 2019.\n" +
-        "Seien Sie einer der Ersten, die Neuigkeiten erfahren.",
+        "Seien Sie einer der Ersten, um Neuigkeiten zu erhalten.",
       newsletter: {
         tab: "Newsletter abonnieren",
         placeholder: "E-Mail-Adresse",
         privacy:
-          "Hiermit akzeptiere ich die Erklärung zum Datenschutz und wünsche, dass BRIVE mit regelmäßig Newsletter per E-Mail zusendet.",
+          "Hiermit akzeptiere ich die Erklärung zum Datenschutz gemäß DSGVO und wünsche, dass BRIVE mich über Neuigkeiten informiert.",
         button: "Abonnieren"
       },
       contact: {

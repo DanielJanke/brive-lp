@@ -18,7 +18,7 @@ const RewardSection = () => (
             <BigNumber>{Strings.landingPage.rewardSection.number}</BigNumber>
           </Col>
         </Row>
-        <Row align='center'>
+        <Row align="center">
           <Col xs={12}>
             <Title2>{Strings.landingPage.rewardSection.title}</Title2>
           </Col>
@@ -55,4 +55,4 @@ const CCContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  `
+`;

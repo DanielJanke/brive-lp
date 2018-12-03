@@ -20,9 +20,9 @@ const SolutionOverviewSection = () => {
         <Row justify="center">
           {Strings.landingPage.hotItWorks.boxes.map((box, index) => {
             return (
-              <Col key={index} className="margin-bottom-3" xs={10} sm={3}>
+              <ColFlex key={index} className="margin-bottom-3" xs={10} sm={3}>
                 <Box number={index + 1} headline={box.title} text={box.text} />
-              </Col>
+              </ColFlex>
             );
           })}
         </Row>
@@ -36,4 +36,8 @@ export default SolutionOverviewSection;
 const SectionExtended = styled(Section)`
   padding-bottom: 20rem;
   margin-bottom: -15rem;
+`;
+
+const ColFlex = styled(Col)`
+  display: flex;
 `;

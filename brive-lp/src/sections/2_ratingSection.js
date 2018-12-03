@@ -8,6 +8,7 @@ import Strings from "../assets/strings";
 import styled from "styled-components";
 import map from "../assets/img/map.png";
 import RatingBox from "../view/ratingBox";
+import ScrollerComponent from "../components/ScrollerComponent";
 
 const RatingSection = () => (
   <SkewedSectionBlue>
@@ -28,15 +29,15 @@ const RatingSection = () => (
         </Row>
       </Container>
       <Container fluid>
-        <Row>
-          {Strings.landingPage.ratingSection.sections.map((rating, i) => {
-            return (
-              <Col xs={2}>
-                <RatingBox headline={rating.title} score={rating.scoring} />
-              </Col>
-            );
-          })}
-        </Row>
+        <RowExt>
+          <ScrollerComponent>
+            {Strings.landingPage.ratingSection.sections.map((rating, i) => {
+              return (
+                <RatingBox key={i} headline={rating.title} score={rating.scoring} />
+              );
+            })}
+          </ScrollerComponent>
+        </RowExt>
       </Container>
     </NoSkew>
   </SkewedSectionBlue>
@@ -57,4 +58,8 @@ const CarouselWrapper = styled.div`
   width: 100rem;
   display: flex;
   justify-content: space-between;
+`;
+
+const RowExt = styled(Row)`
+  height: 19rem;
 `;

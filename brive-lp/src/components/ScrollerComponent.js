@@ -1,32 +1,18 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import posed from "react-pose";
 
 export default class ScrollerComponent extends Component {
-  state = {
-    toggle: true
-  }
-
-  _toggleState = () => {
-    this.setState({toggle: !this.state.toggle})
-  }
-
   render() {
     return (
-      <React.Fragment>
       <Wrapper>
-        <AnimatedWrapperStyle pose={this.state.toggle? 'loop' : 'noloop'}>
-          <Filler />
-          <Filler />
-          <Filler />
-          <Filler />
-          <Filler />
-        </AnimatedWrapperStyle>
-
+        <AnimatedWrapper duration={this.props.duration}>
+          {this.props.children}
+          {this.props.children}
+          {this.props.children}
+          {this.props.children}
+        </AnimatedWrapper>
       </Wrapper>
-        <button style={{marginTop: 160}} onClick={this._toggleState}>Toggle</button>
-
-      </React.Fragment>
     );
   }
 }
@@ -35,20 +21,17 @@ const Wrapper = styled.div`
   position: absolute;
   display: flex;
   z-index: 10;
+  overflow-x: hidden;
+  max-width: 100vw;
 `;
 
-const Filler = styled.div`
-  width: 300px;
-  height: 100px;
-  margin-left: 10px;
-  background-color: red;
+const Scrolling = keyframes`
+   0%   {transform: translateX(0)}
+   99.999999999%  {transform: translateX(-25%)}
+  100%  {transform: translateX(0)}
 `;
 
-const AnimatedWrapper = posed.div({
-  loop: { x: '0%' },
-  noloop: { x: '100%'}
-});
-
-const AnimatedWrapperStyle = styled(AnimatedWrapper)`
+const AnimatedWrapper = styled.div`
   display: flex;
+  animation: ${Scrolling} ${props => (props.duration ? props.duration : 15)}s linear infinite;
 `;

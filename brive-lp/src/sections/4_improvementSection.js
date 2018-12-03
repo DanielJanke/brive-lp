@@ -13,7 +13,9 @@ const ImprovementSection = () => (
       <Container>
         <Row>
           <Col xs={12}>
-            <BigNumber>{Strings.landingPage.improvementSection.number}</BigNumber>
+            <BigNumber>
+              {Strings.landingPage.improvementSection.number}
+            </BigNumber>
           </Col>
         </Row>
         <Row>
@@ -30,10 +32,8 @@ const ImprovementSection = () => (
             <div>Einsparung mit BRIVE</div>
           </TextContainer>
           <BarContainer>
-            <FullBar/>
-            <ImprovementBar>
-              bis zu 15%
-            </ImprovementBar>
+            <FullBar />
+            <ImprovementBar>bis zu 15%</ImprovementBar>
           </BarContainer>
         </RowMargin>
       </Container>
@@ -55,38 +55,40 @@ const NoSkew = styled.div`
 
 const RowMargin = styled(Row)`
   margin: 4rem 0 10rem 0;
-`
+`;
 
 const BarContainer = styled.div`
   width: 100%;
   height: 5rem;
   display: flex;
   padding: 1rem;
-`
+`;
 
 const FullBar = styled.div`
   flex: 85;
   height: 5rem;
   background-color: #425759;
   border-radius: 20px 0 0 20px;
-`
+`;
 
 const ImprovementBar = styled.div`
   flex: 15;
-  background-image: linear-gradient(-135deg, #90A900 0%, #4BB04E 52%, #00B8A3 100%);
+  background-image: linear-gradient(
+    -135deg,
+    #90a900 0%,
+    #4bb04e 52%,
+    #00b8a3 100%
+  );
   border-radius: 0 20px 20px 0;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  ;
-  `
-  const TextContainer = styled.div`
+`;
+const TextContainer = styled.div`
   display: flex;
   width: 100%;
   margin-bottom: 1rem;
   justify-content: space-between;
   padding: 0 1rem;
-  
- 
-`
+`;

@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-grid-system";
 import { Title1, Title2, Text } from "../assets/primitives";
 import Strings from "../assets/strings";
 import styled from "styled-components";
+import ScrollerComponent from "../components/ScrollerComponent";
 
 const SupportSection = () => (
   <SectionBlue>
@@ -13,32 +14,50 @@ const SupportSection = () => (
           <Title2>{Strings.landingPage.support.title}</Title2>
         </ColMargin>
       </Row>
-      <Row>
-        <Col style={{ textAlign: "center" }} xs={6} sm={2} lg={2}>
-          <img
-            className="margin-bottom-3"
-            src={require(`../assets/img/${Strings.landingPage.support.eu}`)}
-          />
-        </Col>
-        <Col style={{ textAlign: "center" }} xs={6} sm={3} lg={3}>
-          <img
-            className="margin-bottom-3"
-            src={require(`../assets/img/${Strings.landingPage.support.efre}`)}
-          />
-        </Col>
-        <Col style={{ textAlign: "center" }} xs={6} sm={3} lg={3}>
-          <img
-            className="margin-bottom-3"
-            src={require(`../assets/img/${Strings.landingPage.support.bss}`)}
-          />
-        </Col>
-        <Col style={{ textAlign: "center" }} xs={6} sm={4} lg={4}>
-          <img
-            className="margin-bottom-3"
-            src={require(`../assets/img/${Strings.landingPage.support.pt}`)}
-          />
-        </Col>
-      </Row>
+    </Container>
+    <Container fluid>
+      <RowExt>
+        <ScrollerComponent duration={60}>
+          <ImgWrapper>
+            <img
+              className="margin-bottom-3"
+              src={require(`../assets/img/${Strings.landingPage.support.eu}`)}
+            />
+          </ImgWrapper>
+          <ImgWrapper>
+            <img
+              className="margin-bottom-3"
+              src={require(`../assets/img/${Strings.landingPage.support.efre}`)}
+            />
+          </ImgWrapper>
+          <ImgWrapper>
+            <img
+              className="margin-bottom-3"
+              src={require(`../assets/img/${
+                Strings.landingPage.support.berlin
+              }`)}
+            />
+          </ImgWrapper>
+          <ImgWrapper>
+            <img
+              className="margin-bottom-3"
+              src={require(`../assets/img/${Strings.landingPage.support.bss}`)}
+            />
+          </ImgWrapper>
+          <ImgWrapper>
+            <img
+              className="margin-bottom-3"
+              src={require(`../assets/img/${Strings.landingPage.support.pt}`)}
+            />
+          </ImgWrapper>
+          <ImgWrapper>
+            <img
+              className="margin-bottom-3"
+              src={require(`../assets/img/${Strings.landingPage.support.zu}`)}
+            />
+          </ImgWrapper>
+        </ScrollerComponent>
+      </RowExt>
     </Container>
   </SectionBlue>
 );
@@ -47,4 +66,15 @@ export default SupportSection;
 
 const ColMargin = styled(Col)`
   margin: 0 0 1rem 0;
+`;
+
+const ImgWrapper = styled.div`
+  width: 12rem;
+  margin-left: 6rem;
+  display: flex;
+  align-items: center;
+`;
+
+const RowExt = styled(Row)`
+  height: 10rem;
 `;

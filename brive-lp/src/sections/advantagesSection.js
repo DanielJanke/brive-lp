@@ -41,4 +41,4 @@ export default AdvantagesSection;
 const SectionLightMargin = styled(SectionLight)`
   margin: -8rem 0 0 0;
   padding: 14rem 0 0 0;
-  `
+`;
