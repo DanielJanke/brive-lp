@@ -25,22 +25,23 @@ const ProblemSection = () => {
           <Col xs={10} sm={3} offset={{ sm: 1 }}>
             <ChartContainer>
               <AmountContainer>
-                <ChartNumber>47%</ChartNumber>
+                <ChartNumber>63%</ChartNumber>
               </AmountContainer>
               <PieChart
                 lineWidth={10}
                 rounded
-                startAngle={0}
+                lengthAngle={-360}
+                startAngle={-90}
                 data={[
-                  { title: "One", value: 53, color: "#D9D9D9" },
-                  { title: "Two", value: 47, color: "#50E3C2" }
+                  { title: "One", value: 37, color: "#D9D9D9" },
+                  { title: "Two", value: 63, color: "#50E3C2" }
                 ]}
               />
             </ChartContainer>
           </Col>
           <Col xs={12} sm={3}>
             <ChartDescription>
-              Anteil des Fahrers an den Flottenkosten
+              Beeinflussbarer Anteil des Fahrers an Flottenkosten <br /><br /> (Kraftstoffverbrauch, Unfallkosten, Versicherungskosten, Wartung & Verschleiß)
             </ChartDescription>
           </Col>
         </Row>

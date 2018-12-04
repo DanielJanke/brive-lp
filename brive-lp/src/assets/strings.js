@@ -80,7 +80,8 @@ const strings = {
       number: 3,
       title: "Belohnung berechnet nach der Qualität des Fahrstils",
       description:
-        "Aus der Bewertung des Fahrstils berechnet BRIVE einen Geldbetrag, der dem Fahrer als steuerfreie Sachleistung auf die BRIVE Kreditkarte überwiesen wird."
+        "Aus der Bewertung des Fahrstils berechnet BRIVE einen Geldbetrag, der dem Fahrer als steuerfreie Sachleistung auf die BRIVE Kreditkarte überwiesen wird*.",
+      notice: '*bis maximal 44€ monatlich steuerfrei, danach Pauschalbesteuerung'
     },
     improvementSection: {
       number: 4,
@@ -92,19 +93,19 @@ const strings = {
       title: "Weitere Vorteile mit der Nutzung von BRIVE für ihre Flotte",
       sections: [
         {
-          icon: "",
+          icon: "heart.svg",
           title: "Höhere Mitarbeiterzufriedenheit",
           description:
             "Durch den ausgezahlten Bonus steigert sich nicht nur die Effizienz ihrer Flotte, sondern gleichzeitig auch die Zufriedenheit ihrer Mitarbeiter."
         },
         {
-          icon: "",
-          title: "BRIVE berücksichtigt ihre Bewertungsfaktoren mit",
+          icon: "plus.svg",
+          title: "BRIVE berücksichtigt Ihre Bewertungsfaktoren mit",
           description:
             "BRIVE beschränkt sich nicht nur auf die Fahrweise an sich. Sollten weitere Faktoren wie z.B. Kunden-zufriedenheit oder Pünktlichkeit berücksichtigt werden – ist dies einfach möglich."
         },
         {
-          icon: "",
+          icon: "camera.svg",
           title: "WER MÖCHTE SCHON ÜBERWACHT WERDEN?",
           description:
             "BRIVE nimmt Ihnen die Arbeit Ihrer Flotte ab und informiert Sie auf Flottenebene über den Fortschritt. Überwachung der Mitarbeiter durch den Arbeitgeber ist somit unmöglich."

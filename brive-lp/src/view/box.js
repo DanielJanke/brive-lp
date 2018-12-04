@@ -3,11 +3,12 @@ import styled from "styled-components";
 import Colors from "../assets/colors";
 import { Text, BoxTitle, BoxGreyNumber } from "../assets/primitives";
 
-export default function Box({ number, headline, text }) {
+export default function Box({ number, iconPath, headline, text }) {
   return (
     <Wrapper>
       <BoxStyle>
-        <BoxGreyNumber>{number}</BoxGreyNumber>
+        {number? <BoxGreyNumber>{number}</BoxGreyNumber> : null}
+        {iconPath? <Icon src={iconPath}/> : null}
         <BoxTitle>{headline}</BoxTitle>
         <Text style={{ textAlign: "center", fontSize: 16 }}>{text}</Text>
       </BoxStyle>
@@ -45,3 +46,9 @@ const BoxShadow = styled.div`
     transform: translateY(0.5rem) scale(1.1);
   }
 `;
+
+const Icon = styled.img`
+  width: 3rem;
+  display: block;
+  margin: 2rem auto 2rem auto;
+`

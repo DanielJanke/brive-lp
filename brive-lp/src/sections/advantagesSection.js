@@ -26,7 +26,7 @@ const AdvantagesSection = () => {
                 xs={10}
                 sm={4}
               >
-                <Box headline={box.title} text={box.description} />
+                <Box iconPath={require(`../assets/img/${box.icon}`)} headline={box.title} text={box.description} />
               </Col>
             );
           })}
@@ -40,5 +40,5 @@ export default AdvantagesSection;
 
 const SectionLightMargin = styled(SectionLight)`
   margin: -8rem 0 0 0;
-  padding: 14rem 0 0 0;
+  padding: 14rem 0 2rem 0;
 `;

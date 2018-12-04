@@ -13,6 +13,10 @@ export default {
         path: "/",
         component: "src/containers/Home"
       },
+      {
+        path: "/impressum",
+        component: "scr/containers/Imprint"
+      },
       // {
       //   path: '/about',
       //   component: 'src/containers/About',

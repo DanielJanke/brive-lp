@@ -28,12 +28,28 @@ const ImprovementSection = () => (
         </Row>
         <RowMargin>
           <TextContainer>
-            <div>Flottenkosten</div>
+            <div>Verbrauchskosten</div>
             <div>Einsparung mit BRIVE</div>
           </TextContainer>
           <BarContainer>
-            <FullBar />
-            <ImprovementBar>bis zu 15%</ImprovementBar>
+            <FullBar percentage={79}/>
+            <ImprovementBar percentage={21}>7 – 21%</ImprovementBar>
+          </BarContainer>
+          <TextContainer>
+            <div>Wartung & Verschleiß</div>
+            <div>Einsparung mit BRIVE</div>
+          </TextContainer>
+          <BarContainer>
+            <FullBar percentage={84}/>
+            <ImprovementBar percentage={16}>8 – 16%</ImprovementBar>
+          </BarContainer>
+          <TextContainer>
+            <div>Unfallkosten</div>
+            <div>Einsparung mit BRIVE</div>
+          </TextContainer>
+          <BarContainer>
+            <FullBar percentage={75}/>
+            <ImprovementBar percentage={25}>14 – 25%</ImprovementBar>
           </BarContainer>
         </RowMargin>
       </Container>
@@ -46,7 +62,7 @@ export default ImprovementSection;
 const SkewedSectionBlue = styled(SectionBlue)`
   transform: skewY(-9deg);
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
 `;
 
 const NoSkew = styled.div`
@@ -62,17 +78,18 @@ const BarContainer = styled.div`
   height: 5rem;
   display: flex;
   padding: 1rem;
+  margin-bottom: 2rem;
 `;
 
 const FullBar = styled.div`
-  flex: 85;
+  flex: ${(props) => {return props.percentage}};
   height: 5rem;
   background-color: #425759;
   border-radius: 20px 0 0 20px;
 `;
 
 const ImprovementBar = styled.div`
-  flex: 15;
+  flex: ${(props) => {return props.percentage}};
   background-image: linear-gradient(
     -135deg,
     #90a900 0%,
