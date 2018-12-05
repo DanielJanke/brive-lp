@@ -11,7 +11,7 @@ const Footer = () => {
       <Container>
         <RowExt>
           <Logo src={logoImg} />
-          <Link exact to="/imprint">
+          <Link exact to="/impressum">
             Impressum
           </Link>
         </RowExt>

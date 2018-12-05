@@ -37,7 +37,7 @@ export default class ContactBox extends Component {
             {/*</Col>*/}
             <Col xs={12} sm={12}>
               <ClickTitle
-                active={this.state.active === 1 ? true : false}
+                // active={this.state.active === 1 ? true : false}
                 onClick={() => {
                   this._setActive(1);
                 }}
@@ -75,9 +75,7 @@ export default class ContactBox extends Component {
                   </Col>
                   <Col xs={10}>
                     <SmallText as="label" htmlFor="newsletterCheck">
-                      Hiermit akzeptiere ich die Erklärung zum Datenschutz und
-                      wünsche, dass BRIVE mit regelmäßig Newsletter per E-Mail
-                      zusendet.
+                      Hiermit akzeptiere ich die Erklärung zum Datenschutz.
                     </SmallText>
                   </Col>
                 </Row>
@@ -122,7 +120,7 @@ const SubArea = styled.div`
   padding: 2rem 4rem 3rem 4rem;
   background-color: #ecfbfa;
   border-radius: 0 0 8px 8px;
-  height: 19rem;
+  //height: 19rem;
 `;
 
 const StyledInput = styled.input`
@@ -147,6 +145,8 @@ const StyledTextArea = styled.textarea`
   font-weight: 500;
   width: 100%;
   margin: 0 0 2rem 0;
+  resize: vertical;
+  min-height: 36px;
 `;
 
 export const ClickTitle = styled.p`

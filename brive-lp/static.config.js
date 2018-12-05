@@ -15,7 +15,7 @@ export default {
       },
       {
         path: "/impressum",
-        component: "scr/containers/Imprint"
+        component: "src/containers/Imprint"
       },
       // {
       //   path: '/about',
