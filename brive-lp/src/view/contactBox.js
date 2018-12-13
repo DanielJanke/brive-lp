@@ -26,14 +26,14 @@ export default class ContactBox extends Component {
           <Title2 center>{this.props.headline}</Title2>
           <Row>
             {/*<Col xs={12} sm={6}>*/}
-              {/*<ClickTitle*/}
-                {/*active={this.state.active === 0 ? true : false}*/}
-                {/*onClick={() => {*/}
-                  {/*this._setActive(0);*/}
-                {/*}}*/}
-              {/*>*/}
-                {/*Newsletter abonnieren*/}
-              {/*</ClickTitle>*/}
+            {/*<ClickTitle*/}
+            {/*active={this.state.active === 0 ? true : false}*/}
+            {/*onClick={() => {*/}
+            {/*this._setActive(0);*/}
+            {/*}}*/}
+            {/*>*/}
+            {/*Newsletter abonnieren*/}
+            {/*</ClickTitle>*/}
             {/*</Col>*/}
             <Col xs={12} sm={12}>
               <ClickTitle
@@ -48,40 +48,40 @@ export default class ContactBox extends Component {
           </Row>
           <SubArea>
             {/*{this.state.active === 0 ? (*/}
-              {/*<React.Fragment>*/}
-                {/*<StyledInput placeholder="E-Mail-Adresse" />*/}
-                {/*<Row>*/}
-                  {/*<Col xs={1}>*/}
-                    {/*<input type="checkbox" id="newsletterCheck" />*/}
-                  {/*</Col>*/}
-                  {/*<Col xs={10}>*/}
-                    {/*<SmallText as="label" htmlFor="newsletterCheck">*/}
-                      {/*Hiermit akzeptiere ich die Erklärung zum Datenschutz und*/}
-                      {/*wünsche, dass BRIVE mit regelmäßig Newsletter per E-Mail*/}
-                      {/*zusendet.*/}
-                    {/*</SmallText>*/}
-                  {/*</Col>*/}
-                {/*</Row>*/}
-                {/*<br />*/}
-                {/*<PrimaryButton text="Abonnieren" />*/}
-              {/*</React.Fragment>*/}
+            {/*<React.Fragment>*/}
+            {/*<StyledInput placeholder="E-Mail-Adresse" />*/}
+            {/*<Row>*/}
+            {/*<Col xs={1}>*/}
+            {/*<input type="checkbox" id="newsletterCheck" />*/}
+            {/*</Col>*/}
+            {/*<Col xs={10}>*/}
+            {/*<SmallText as="label" htmlFor="newsletterCheck">*/}
+            {/*Hiermit akzeptiere ich die Erklärung zum Datenschutz und*/}
+            {/*wünsche, dass BRIVE mit regelmäßig Newsletter per E-Mail*/}
+            {/*zusendet.*/}
+            {/*</SmallText>*/}
+            {/*</Col>*/}
+            {/*</Row>*/}
+            {/*<br />*/}
+            {/*<PrimaryButton text="Abonnieren" />*/}
+            {/*</React.Fragment>*/}
             {/*) : (*/}
-              <React.Fragment>
-                <StyledInput placeholder="E-Mail-Adresse" />
-                <StyledTextArea placeholder="Ihre Nachricht" />
-                <Row>
-                  <Col xs={1}>
-                    <input type="checkbox" id="newsletterCheck" />
-                  </Col>
-                  <Col xs={10}>
-                    <SmallText as="label" htmlFor="newsletterCheck">
-                      Hiermit akzeptiere ich die Erklärung zum Datenschutz.
-                    </SmallText>
-                  </Col>
-                </Row>
-                <br />
-                <PrimaryButton text="Nachricht senden" />
-              </React.Fragment>
+            <React.Fragment>
+              <StyledInput placeholder="E-Mail-Adresse" />
+              <StyledTextArea placeholder="Ihre Nachricht" />
+              <Row>
+                <Col xs={1}>
+                  <input type="checkbox" id="newsletterCheck" />
+                </Col>
+                <Col xs={10}>
+                  <SmallText as="label" htmlFor="newsletterCheck">
+                    Hiermit akzeptiere ich die Erklärung zum Datenschutz.
+                  </SmallText>
+                </Col>
+              </Row>
+              <br />
+              <PrimaryButton text="Nachricht senden" />
+            </React.Fragment>
             {/*)}*/}
           </SubArea>
         </BoxStyle>

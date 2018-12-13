@@ -7,8 +7,8 @@ export default function Box({ number, iconPath, headline, text }) {
   return (
     <Wrapper>
       <BoxStyle>
-        {number? <BoxGreyNumber>{number}</BoxGreyNumber> : null}
-        {iconPath? <Icon src={iconPath}/> : null}
+        {number ? <BoxGreyNumber>{number}</BoxGreyNumber> : null}
+        {iconPath ? <Icon src={iconPath} /> : null}
         <BoxTitle>{headline}</BoxTitle>
         <Text style={{ textAlign: "center", fontSize: 16 }}>{text}</Text>
       </BoxStyle>
@@ -51,4 +51,4 @@ const Icon = styled.img`
   width: 3rem;
   display: block;
   margin: 2rem auto 2rem auto;
-`
+`;

@@ -5,7 +5,7 @@ import { SectionBlue } from "../assets/styles";
 import { Container, Row, Col } from "react-grid-system";
 import { BigNumber, Title2, Text, SmallText } from "../assets/primitives";
 import Strings from "../assets/strings";
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 import card from "../assets/img/brive_credit_card.svg";
 import RatingBox from "../view/ratingBox";
 
@@ -30,7 +30,9 @@ const RewardSection = () => (
             <CreditCard2 src={card} />
             <CreditCard3 src={card} />
           </CCContainer>
-            <SmallText style={{width: '100%'}}>{Strings.landingPage.rewardSection.notice}</SmallText>
+          <SmallText style={{ width: "100%" }}>
+            {Strings.landingPage.rewardSection.notice}
+          </SmallText>
         </Row>
       </Container>
     </NoSkew>
@@ -65,15 +67,13 @@ const CCContainer = styled.div`
 const CreditCard1 = styled.img`
   opacity: 0.3;
   transform: rotate(-7deg) translateY(6rem) translateX(9rem);
-  
-  `
+`;
 
 const CreditCard2 = styled.img`
-z-index: 10;
-`
+  z-index: 10;
+`;
 
 const CreditCard3 = styled.img`
   opacity: 0.3;
   transform: rotate(7deg) translateY(6rem) translateX(-9rem);
-  
-  `
+`;

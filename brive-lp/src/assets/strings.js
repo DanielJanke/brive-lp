@@ -1,8 +1,7 @@
 const strings = {
   landingPage: {
     header: {
-      headline:
-        "BRIVE hilft Fahrzeugflotten effizienter zu machen.",
+      headline: "BRIVE hilft Fahrzeugflotten effizienter zu machen.",
       button: "Kontaktieren"
     },
     intro: {
@@ -81,7 +80,8 @@ const strings = {
       title: "Belohnung berechnet nach der Qualität des Fahrstils",
       description:
         "Aus der Bewertung des Fahrstils berechnet BRIVE einen Geldbetrag, der dem Fahrer als steuerfreie Sachleistung auf die BRIVE Kreditkarte überwiesen wird*.",
-      notice: '*bis maximal 44€ monatlich steuerfrei, danach Pauschalbesteuerung'
+      notice:
+        "*bis maximal 44€ monatlich steuerfrei, danach Pauschalbesteuerung"
     },
     improvementSection: {
       number: 4,

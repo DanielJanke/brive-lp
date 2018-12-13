@@ -10,7 +10,9 @@ const Footer = () => {
     <SectionLightExt>
       <Container>
         <RowExt>
-          <Logo src={logoImg} />
+          <Link exact to="/">
+            <Logo src={logoImg} />
+          </Link>
           <Link exact to="/impressum">
             Impressum
           </Link>
@@ -23,13 +25,13 @@ const Footer = () => {
 export default Footer;
 
 const SectionLightExt = styled(SectionLight)`
-padding: 5rem 0;
-`
+  padding: 5rem 0;
+`;
 
 const RowExt = styled(Row)`
-justify-content: space-between !important;
-`
+  justify-content: space-between !important;
+`;
 
 const Logo = styled.img`
   height: 2rem;
-  `
+`;

@@ -6,10 +6,26 @@ export const Title1 = styled.h1`
   font-weight: 600;
   color: ${props =>
     props.light ? Colors.textColorLight : Colors.textColorDark};
+  width: 100%;
 `;
 
 export const Title2 = styled.h2`
   font-size: 26px;
+  font-weight: 500;
+  color: ${props =>
+    props.light ? Colors.textColorLight : Colors.textColorDark};
+  text-align: ${props => (props.center ? "center" : "")};
+`;
+
+export const Title3 = styled.h3`
+  font-size: 20px;
+  font-weight: 500;
+  color: ${props =>
+    props.light ? Colors.textColorLight : Colors.textColorDark};
+  text-align: ${props => (props.center ? "center" : "")};
+`;
+export const Title4 = styled.h4`
+  font-size: 18px;
   font-weight: 500;
   color: ${props =>
     props.light ? Colors.textColorLight : Colors.textColorDark};
@@ -22,6 +38,7 @@ export const Text = styled.p`
   font-weight: 400;
   color: ${props =>
     props.light ? Colors.textColorLight : Colors.textColorDark};
+  width: 100%;
 `;
 
 export const BigNumber = styled.p`

@@ -26,7 +26,11 @@ const AdvantagesSection = () => {
                 xs={10}
                 sm={4}
               >
-                <Box iconPath={require(`../assets/img/${box.icon}`)} headline={box.title} text={box.description} />
+                <Box
+                  iconPath={require(`../assets/img/${box.icon}`)}
+                  headline={box.title}
+                  text={box.description}
+                />
               </Col>
             );
           })}

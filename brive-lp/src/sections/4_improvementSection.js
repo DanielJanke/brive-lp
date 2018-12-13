@@ -32,7 +32,7 @@ const ImprovementSection = () => (
             <div>Einsparung mit BRIVE</div>
           </TextContainer>
           <BarContainer>
-            <FullBar percentage={79}/>
+            <FullBar percentage={79} />
             <ImprovementBar percentage={21}>7 – 21%</ImprovementBar>
           </BarContainer>
           <TextContainer>
@@ -40,7 +40,7 @@ const ImprovementSection = () => (
             <div>Einsparung mit BRIVE</div>
           </TextContainer>
           <BarContainer>
-            <FullBar percentage={84}/>
+            <FullBar percentage={84} />
             <ImprovementBar percentage={16}>8 – 16%</ImprovementBar>
           </BarContainer>
           <TextContainer>
@@ -48,7 +48,7 @@ const ImprovementSection = () => (
             <div>Einsparung mit BRIVE</div>
           </TextContainer>
           <BarContainer>
-            <FullBar percentage={75}/>
+            <FullBar percentage={75} />
             <ImprovementBar percentage={25}>14 – 25%</ImprovementBar>
           </BarContainer>
         </RowMargin>
@@ -82,14 +82,18 @@ const BarContainer = styled.div`
 `;
 
 const FullBar = styled.div`
-  flex: ${(props) => {return props.percentage}};
+  flex: ${props => {
+    return props.percentage;
+  }};
   height: 5rem;
   background-color: #425759;
   border-radius: 20px 0 0 20px;
 `;
 
 const ImprovementBar = styled.div`
-  flex: ${(props) => {return props.percentage}};
+  flex: ${props => {
+    return props.percentage;
+  }};
   background-image: linear-gradient(
     -135deg,
     #90a900 0%,

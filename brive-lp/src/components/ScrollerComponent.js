@@ -33,5 +33,6 @@ const Scrolling = keyframes`
 
 const AnimatedWrapper = styled.div`
   display: flex;
-  animation: ${Scrolling} ${props => (props.duration ? props.duration : 15)}s linear infinite;
+  animation: ${Scrolling} ${props => (props.duration ? props.duration : 15)}s
+    linear infinite;
 `;

@@ -41,7 +41,9 @@ const ProblemSection = () => {
           </Col>
           <Col xs={12} sm={3}>
             <ChartDescription>
-              Beeinflussbarer Anteil des Fahrers an Flottenkosten <br /><br /> (Kraftstoffverbrauch, Unfallkosten, Versicherungskosten, Wartung & Verschleiß)
+              Beeinflussbarer Anteil des Fahrers an Flottenkosten <br />
+              <br /> (Kraftstoffverbrauch, Unfallkosten, Versicherungskosten,
+              Wartung & Verschleiß)
             </ChartDescription>
           </Col>
         </Row>

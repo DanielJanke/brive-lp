@@ -33,7 +33,11 @@ const RatingSection = () => (
           <ScrollerComponent>
             {Strings.landingPage.ratingSection.sections.map((rating, i) => {
               return (
-                <RatingBox key={i} headline={rating.title} score={rating.scoring} />
+                <RatingBox
+                  key={i}
+                  headline={rating.title}
+                  score={rating.scoring}
+                />
               );
             })}
           </ScrollerComponent>
