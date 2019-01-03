@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled, { keyframes } from "styled-components";
 import posed from "react-pose";
 
-export default class ScrollerComponent extends Component {
+export default class ScrollerComponent extends React.PureComponent {
   render() {
     return (
       <Wrapper>

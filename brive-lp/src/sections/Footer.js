@@ -1,31 +1,42 @@
 import React, { Component } from "react";
 import { SectionLight } from "../assets/styles";
 import { Container, Row, Col } from "react-grid-system";
-import logoImg from "../assets/img/brive_logo.png";
+import logoImg from "../assets/img/brive_logo_white.svg";
 import styled from "styled-components";
 import { Link } from "react-static";
 
 const Footer = () => {
   return (
-    <SectionLightExt>
+    <FooterSection>
       <Container>
         <RowExt>
-          <Link exact to="/">
-            <Logo src={logoImg} />
-          </Link>
-          <Link exact to="/impressum">
-            Impressum
-          </Link>
+          <Col style={ColMargin} xs={12} sm={2}>
+            <Link exact to="/">
+              <Logo src={logoImg} />
+            </Link>
+          </Col>
+          <Col style={ColMargin} xs={12} sm={2} offset={{ sm: 4 }}>
+            <Link exact to="/impressum">
+              Impressum
+            </Link>
+          </Col>
+          <Col style={ColMargin} xs={12} sm={2}>
+            <Link exact to="/datenschutz">
+              Datenschutzerklärung
+            </Link>
+          </Col>
         </RowExt>
       </Container>
-    </SectionLightExt>
+    </FooterSection>
   );
 };
 
 export default Footer;
 
-const SectionLightExt = styled(SectionLight)`
+const FooterSection = styled.div`
   padding: 5rem 0;
+  width: 100vw;
+  background-image: linear-gradient(-135deg, #232900 0%, #001f1b 100%);
 `;
 
 const RowExt = styled(Row)`
@@ -35,3 +46,8 @@ const RowExt = styled(Row)`
 const Logo = styled.img`
   height: 2rem;
 `;
+
+const ColMargin = {
+  marginBottom: 32,
+  textAlign: "center"
+};

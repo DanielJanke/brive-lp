@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function PrimaryButton({ onClick, text }) {
+export default function PrimaryButton({ onClick, text, active = true }) {
   return (
     <Wrapper onClick={onClick}>
       <Button>{text}</Button>
@@ -15,7 +15,12 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const Button = styled.div`
+const Button = styled.button`
+  font-family: "IBM Plex Sans", sans-serif !important;
+  background-color: initial !important;
+  border: none !important;
+  font-size: 16px;
+
   text-transform: uppercase;
   background-image: linear-gradient(
     135deg,
@@ -26,9 +31,8 @@ const Button = styled.div`
   border-radius: 5px;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 600 !important;
   position: relative;
-
   z-index: 1;
   transition: all 0.2s;
   ${Wrapper}:hover & {
@@ -37,6 +41,10 @@ const Button = styled.div`
       rgba(144, 168, 0, 1) 0%,
       rgba(0, 184, 163, 1) 100%
     );
+  }
+
+  :focus {
+    outline: none;
   }
 `;
 

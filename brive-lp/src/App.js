@@ -1,12 +1,18 @@
 import React from "react";
 import { Router, Link } from "react-static";
 import { hot } from "react-hot-loader";
+import ReactGA from "react-ga";
 //
 import Routes from "react-static-routes";
 
 import "./app.css";
 import { setConfiguration } from "react-grid-system";
 import { containerWidthsConfid } from "./assets/styleconfig";
+
+ReactGA.initialize("UA-124352619-1", {
+  debug: true
+});
+// ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
   setConfiguration(containerWidthsConfid);

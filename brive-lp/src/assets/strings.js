@@ -2,12 +2,21 @@ const strings = {
   landingPage: {
     header: {
       headline: "BRIVE hilft Fahrzeugflotten effizienter zu machen.",
+      text: "Kosten senken indem gute Fahrweise belohnt wird.",
       button: "Kontaktieren"
     },
     intro: {
       headline: "Den größten Anteil an Flottenkosten haben ihre Fahrer",
       text:
-        "Umso wichtiger sind deshalb motivierte Mitarbeiter, die mit Ihrer Fahrweise Rücksicht auf die Fahrzeuge, die laufenden Kosten und die Umwelt nehmen. BRIVE hilft dabei Mitarbeiter nachhaltig zu motivieren, um die Kosten Ihrer Flotte signifikant zu senken. "
+        "Umso wichtiger sind deshalb motivierte Mitarbeiter, die mit Ihrer Fahrweise Rücksicht auf die Fahrzeuge, die laufenden Kosten und die Umwelt nehmen. BRIVE hilft dabei Mitarbeiter nachhaltig zu motivieren, um die Kosten Ihrer Flotte signifikant zu senken. ",
+      chartDescription: "Beeinflussbarer Anteil des Fahrers an Flottenkosten",
+      bulletPoints: [
+        "Kraftstoffverbrauch",
+        "Unfallkosten",
+        "Versicherungskosten",
+        "Wartung",
+        "Verschleiß"
+      ]
     },
     hotItWorks: {
       headline: "Wie BRIVE Fahrzeugflotten effizienter macht",
@@ -100,9 +109,9 @@ const strings = {
         },
         {
           icon: "plus.svg",
-          title: "BRIVE berücksichtigt Ihre Bewertungsfaktoren mit",
+          title: "BRIVE berücksichtigt Ihre Bewertungsfaktoren",
           description:
-            "BRIVE beschränkt sich nicht nur auf die Fahrweise an sich. Sollten weitere Faktoren wie z.B. Kunden-zufriedenheit oder Pünktlichkeit berücksichtigt werden – ist dies einfach möglich."
+            "BRIVE beschränkt sich nicht nur auf die Fahrweise an sich. Sollten weitere Faktoren wie z.B. Kundenzufriedenheit oder Pünktlichkeit berücksichtigt werden, ist dies einfach möglich."
         },
         {
           icon: "camera.svg",

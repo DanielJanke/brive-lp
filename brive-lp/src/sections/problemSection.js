@@ -6,12 +6,14 @@ import {
   Title1,
   Title2,
   ChartNumber,
-  ChartDescription
+  ChartDescription,
+  SmallText
 } from "../assets/primitives";
 import Strings from "../assets/strings";
 import PieChart from "react-minimal-pie-chart";
 
 import styled from "styled-components";
+import { media } from "../assets/styleconfig";
 
 const ProblemSection = () => {
   return (
@@ -22,10 +24,13 @@ const ProblemSection = () => {
             <Title2>{Strings.landingPage.intro.headline}</Title2>
             <Text>{Strings.landingPage.intro.text}</Text>
           </Col>
-          <Col xs={10} sm={3} offset={{ sm: 1 }}>
+          <Col xs={10} sm={3} offset={{ xs: 1, sm: 1 }}>
             <ChartContainer>
               <AmountContainer>
-                <ChartNumber>63%</ChartNumber>
+                <ChartNumber>
+                  <SmallText style={styles.upto}>bis zu</SmallText>
+                  63%
+                </ChartNumber>
               </AmountContainer>
               <PieChart
                 lineWidth={10}
@@ -41,9 +46,12 @@ const ProblemSection = () => {
           </Col>
           <Col xs={12} sm={3}>
             <ChartDescription>
-              Beeinflussbarer Anteil des Fahrers an Flottenkosten <br />
-              <br /> (Kraftstoffverbrauch, Unfallkosten, Versicherungskosten,
-              Wartung & Verschleiß)
+              <p>{Strings.landingPage.intro.chartDescription}</p>
+              <ul>
+                {Strings.landingPage.intro.bulletPoints.map(point => {
+                  return <li>{point}</li>;
+                })}
+              </ul>
             </ChartDescription>
           </Col>
         </Row>
@@ -55,8 +63,13 @@ const ProblemSection = () => {
 export default ProblemSection;
 
 const SectionBlueMargin = styled(SectionBlue)`
-  padding: 4rem 0;
-`;
+  padding: 6rem 0;
+  ${media.xl`padding: 6rem 0;`}
+  ${media.lg`padding: 6rem 0;`}
+  ${media.md`padding: 3rem 0;`}
+  ${media.sm`padding: 3rem 0;`}
+  
+  `;
 
 const ChartContainer = styled.div`
   position: relative;
@@ -72,3 +85,12 @@ const AmountContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+const styles = {
+  upto: {
+    position: "relative",
+    textAlign: "center",
+    marginTop: -16,
+    marginBottom: 0
+  }
+};

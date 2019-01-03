@@ -45,7 +45,7 @@ export default class Home extends Component {
         <RatingSection />
         <RewardSection />
         {/*<ScrollerComponent />*/}
-        <ImprovementSection />
+        {/* <ImprovementSection /> */}
         <AdvantagesSection />
         <SupportSection />
         {/*<FaqSection />*/}

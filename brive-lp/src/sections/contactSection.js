@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import { Section, SectionLight } from "../assets/styles";
 import { Container, Row, Col } from "react-grid-system";
 import logoImg from "../assets/img/brive_logo.png";
@@ -9,7 +10,7 @@ import ContactBox from "../view/contactBox";
 
 const ContactSection = () => {
   return (
-    <Section>
+    <SectionExt id="contact-box">
       <Container>
         <Row justify="center">
           <Col xs={12} sm={8}>
@@ -20,8 +21,13 @@ const ContactSection = () => {
           </Col>
         </Row>
       </Container>
-    </Section>
+    </SectionExt>
   );
 };
 
 export default ContactSection;
+
+const SectionExt = styled(Section)`
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+`;

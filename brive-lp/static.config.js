@@ -17,6 +17,10 @@ export default {
         path: "/impressum",
         component: "src/containers/Imprint"
       },
+      {
+        path: "/datenschutz",
+        component: "src/containers/Datenschutz"
+      },
       // {
       //   path: '/about',
       //   component: 'src/containers/About',

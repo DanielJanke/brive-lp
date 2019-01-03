@@ -1,5 +1,5 @@
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif !important;
   font-weight: 500;
   font-size: 16px;
   margin: 0;
@@ -10,8 +10,14 @@ body {
 
 a {
   text-decoration: none;
-  color: #108db8;
-  font-weight: bold;
+  color: #ffffff;
+  color: rgba(255,255,255,0.80);
+  font-weight: 400;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: rgba(255,255,255,1);
 }
 
 img {

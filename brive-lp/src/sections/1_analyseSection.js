@@ -19,11 +19,11 @@ const AnalyseSection = () => (
         <Row>
           <Col xs={12}>
             <Title2>{Strings.landingPage.analyseSection.title}</Title2>
+            <Col xs={12} sm={6} offset={{ sm: 3 }}>
+              <Text>{Strings.landingPage.analyseSection.description}</Text>
+            </Col>
           </Col>
-          <Col xs={12} sm={6} offset={{ sm: 3 }}>
-            <Text>{Strings.landingPage.analyseSection.description}</Text>
-          </Col>
-          <Col xs={12}>
+          <Col style={style.Col} xs={12}>
             <img src={map} />
           </Col>
         </Row>
@@ -42,3 +42,9 @@ const SkewedSectionBlue = styled(SectionBlue)`
 const NoSkew = styled.div`
   transform: skewY(9deg);
 `;
+
+const style = {
+  Col: {
+    marginTop: 32
+  }
+};

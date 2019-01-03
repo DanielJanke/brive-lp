@@ -81,8 +81,9 @@ export const BoxTitle = styled.p`
 `;
 
 export const ChartNumber = styled.p`
-  font-size: 50px;
+  font-size: 48px;
   color: #373434;
+  margin: 0;
 `;
 export const ChartDescription = styled.p`
   font-size: 16px;

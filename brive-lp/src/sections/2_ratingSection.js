@@ -28,9 +28,9 @@ const RatingSection = () => (
           </Col>
         </Row>
       </Container>
-      <Container fluid>
+      <Container style={style.AnimatedContainer} fluid>
         <RowExt>
-          <ScrollerComponent>
+          <ScrollerComponent duration={100}>
             {Strings.landingPage.ratingSection.sections.map((rating, i) => {
               return (
                 <RatingBox
@@ -67,3 +67,9 @@ const CarouselWrapper = styled.div`
 const RowExt = styled(Row)`
   height: 19rem;
 `;
+
+const style = {
+  AnimatedContainer: {
+    marginTop: 32
+  }
+};

@@ -1,9 +1,12 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-import Colors from "../assets/colors";
+import { Link } from "react-static";
 import { Row, Col } from "react-grid-system";
+import styled from "styled-components";
+
+import Colors from "../assets/colors";
 import { Title2, SmallText } from "../assets/primitives";
 import PrimaryButton from "../view/button";
+import { media } from "../assets/styleconfig";
 
 export default class ContactBox extends Component {
   constructor(props) {
@@ -66,22 +69,32 @@ export default class ContactBox extends Component {
             {/*<PrimaryButton text="Abonnieren" />*/}
             {/*</React.Fragment>*/}
             {/*) : (*/}
-            <React.Fragment>
-              <StyledInput placeholder="E-Mail-Adresse" />
-              <StyledTextArea placeholder="Ihre Nachricht" />
+            <Form action="https://formspree.io/info@brive.io" method="POST">
+              <StyledInput
+                placeholder="E-Mail-Adresse"
+                name="mail"
+                type="email"
+              />
+              <StyledTextArea name="text" placeholder="Ihre Nachricht" />
               <Row>
-                <Col xs={1}>
-                  <input type="checkbox" id="newsletterCheck" />
-                </Col>
-                <Col xs={10}>
-                  <SmallText as="label" htmlFor="newsletterCheck">
-                    Hiermit akzeptiere ich die Erklärung zum Datenschutz.
+                {/* <Col xs={1}> */}
+                {/* <input type="checkbox" id="newsletterCheck" name="message" /> */}
+                {/* </Col> */}
+                <Col xs={12}>
+                  <SmallText>
+                    Ihre Daten werden ausschließlich für die Bearbeitung Ihres
+                    Anliegens verwendet und werden nach 90 Tagen gelöscht. Hier
+                    finden Sie unsere Erklärung zum{" "}
+                    <Link exact to="/datenschutz">
+                      Datenschutz
+                    </Link>
+                    .
                   </SmallText>
                 </Col>
               </Row>
               <br />
-              <PrimaryButton text="Nachricht senden" />
-            </React.Fragment>
+              <PrimaryButton type="submit" text="Nachricht senden" />
+            </Form>
             {/*)}*/}
           </SubArea>
         </BoxStyle>
@@ -114,10 +127,21 @@ const BoxShadow = styled.div`
   height: 2rem;
 `;
 
+const Form = styled.form`
+  
+  ${media.xl`padding: 4rem;`}
+  ${media.lg`padding: 4rem;`}
+  ${media.md`padding: 3rem 2rem;`}
+  ${media.sm`padding: 3rem 2rem;`}
+
+  padding: 3rem 2rem;
+
+`;
+
 //  TODO Remove inline Color
 const SubArea = styled.div`
   margin: 0 -2rem -2rem -2rem;
-  padding: 2rem 4rem 3rem 4rem;
+  /* padding: 2rem 4rem 3rem 4rem; */
   background-color: #ecfbfa;
   border-radius: 0 0 8px 8px;
   //height: 19rem;
@@ -127,24 +151,28 @@ const StyledInput = styled.input`
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #d8d8d8;
   border-radius: 4px;
-  padding: 0.5rem;
+  box-sizing: border-box;
+  padding: 1rem 0.5rem;
   height: 1.25rem;
   font-size: 0.8rem;
   font-weight: 500;
   width: 100%;
   margin: 0 0 1rem 0;
+  font-family: "IBM Plex Sans", sans-serif !important;
 `;
 
 const StyledTextArea = styled.textarea`
   background: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
   border: 1px solid #d8d8d8;
   border-radius: 4px;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   height: 4rem;
   font-size: 0.8rem;
   font-weight: 500;
+  font-family: "IBM Plex Sans", sans-serif !important;
   width: 100%;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   resize: vertical;
   min-height: 36px;
 `;
