@@ -1,66 +1,66 @@
 const strings = {
   landingPage: {
     header: {
-      headline: "BRIVE hilft Fahrzeugflotten effizienter zu machen.",
-      text: "Kosten senken indem gute Fahrweise belohnt wird.",
-      button: "Kontaktieren",
+      headline: "BRIVE maximises efficiency of vehicle fleets.",
+      text: "Reduce costs by rewarding good driving behaviour.",
+      button: "Contact",
       changeLanguage: {
-        text: "ENG",
-        link: "https://eng.brive.de"
+        text: "DE",
+        link: "https://www.brive.de"
       }
     },
     intro: {
-      headline: "Den größten Anteil an Flottenkosten haben ihre Fahrer",
+      headline: "Drivers have a large impact on the costs of your fleet",
       text:
-        "Umso wichtiger sind deshalb motivierte Mitarbeiter, die mit Ihrer Fahrweise Rücksicht auf die Fahrzeuge, die laufenden Kosten und die Umwelt nehmen. BRIVE hilft dabei Mitarbeiter nachhaltig zu motivieren, um die Kosten Ihrer Flotte signifikant zu senken. ",
-      chartDescription: "Beeinflussbarer Anteil des Fahrers an Flottenkosten",
+        "It is therefore important to have motivated employees whose driving style respects vehicles, running costs and the environment. BRIVE motivates employees lastingly to lower the costs of your fleet significantly.",
+      chartDescription: "The driver's influence on fleet costs",
       bulletPoints: [
-        "Kraftstoffverbrauch",
-        "Unfallkosten",
-        "Versicherungskosten",
-        "Wartung",
-        "Verschleiß"
+        "fuel consumption",
+        "accident costs",
+        "insurance costs",
+        "maintenance",
+        "wear"
       ]
     },
     hotItWorks: {
-      headline: "Wie BRIVE Fahrzeugflotten effizienter macht",
+      headline: "How BRIVE makes fleets more efficient",
       text:
-        "BRIVE besteht aus mehreren Komponenten: Analyse, Bewertung und anschließende Belohnung der Fahrer.",
+        "BRIVE consists of several parts: analysis, rating and driver rewards.",
       boxes: [
         {
-          title: "Analyse",
+          title: "Analysis",
           text:
-            "Die BRIVE App liest die Sensoren im Smartphone aus und bereitet die Daten auf."
+            "The BRIVE app reads the smartphone sensor-data (such as acceleration sensors) and processes it."
         },
         {
-          title: "Bewertung",
+          title: "Rating",
           text:
-            "Algorithmen berechnen anhand der Sensoren eine Bewertung des Fahrstils für den einzelnen Fahrer."
+            "We use machine learning to calculate and evaluate the driving style for the individual driver using the smartphone sensors."
         },
         {
-          title: "Belohnung",
+          title: "Reward",
           text:
-            "Aus der Bewertung ergibt sich ein Bonus, den der Fahrer auf die BRIVE Kreditkarte steuerfrei überwiesen bekommt."
+            "The evaluation results in a bonus, which the driver receives tax-free on the BRIVE credit card."
         },
         {
-          title: "Verbesserung",
+          title: "Improvement",
           text:
-            "Je besser der Fahrstil, desto größer ist die Ersparnis für Ihre Flotte."
+            "The better the driving style, the greater the savings for your fleet."
         }
       ]
     },
     analyseSection: {
       number: 1,
-      title: "Analyse von Sensorwerten aus dem Smartphone",
+      title: "Analysis of sensor data from the smartphone",
       description:
-        "BRIVE nutzt eine Vielzahl von Sensoren im Smartphone, um herauszufinden wie das Fahrzeug gefahren wird. Anhand dieser Sensoren werden Ereignisse berechnet, die einen Aufschluss über das Fahrverhalten geben (z.B. starke Bremsung oder Geschwindigkeitsüberschreitung).",
+        "BRIVE uses a variety of sensors in the smartphone to find out how the vehicle is driven. These sensors are used to calculate events that provide information about driving behaviour (e.g. strong braking or speeding).",
       img: ""
     },
     ratingSection: {
       number: 2,
-      title: "Bewertung des Fahrstils verständlich gemacht",
+      title: "Rating is made easy to understand",
       description:
-        "Aus den Ereignissen berechnet BRIVE Punktzahlen in verschiedenen Kategorien, die für den Fahrer verständlich dargestellt werden. Daraus erhalten sie Einblicke in ihre Fahrweise und können sich gezielt verbessern. Sie profitieren von gesteigerter Flotteneffizienz.",
+        "BRIVE calculates ratings in different categories which are easy-to-understand for the driver. This gives insights into the driving style and allows targeted improvements. You will benefit from increased fleet efficiency.",
       sections: [
         {
           title: "Anfahrverhalten",
@@ -90,11 +90,11 @@ const strings = {
     },
     rewardSection: {
       number: 3,
-      title: "Belohnung berechnet nach der Qualität des Fahrstils",
+      title: "Reward is based on the driving style",
       description:
-        "Aus der Bewertung des Fahrstils berechnet BRIVE einen Geldbetrag, der dem Fahrer als steuerfreie Sachleistung auf die BRIVE Kreditkarte überwiesen wird*.",
+        "BRIVE calculates a reward based on the rating of the driving style, which is transferred to the BRIVE credit card as a tax-free benefit.*",
       notice:
-        "*bis maximal 44€ monatlich steuerfrei, danach Pauschalbesteuerung"
+        "*tax-free up to a maximum of 44€ per month, thereafter flat-rate taxation"
     },
     improvementSection: {
       number: 4,
@@ -103,30 +103,30 @@ const strings = {
         "Einsparungen bei Verbrauch, Unfallkosten und Kosten für Wartung und Verschleiß steigern die Profitabilität Ihrer Flotte. Gleichzeitig motivieren Sie Ihre Mitarbeiter durch zusätzliche Gehaltsleistungen. "
     },
     advantages: {
-      title: "Weitere Vorteile mit der Nutzung von BRIVE für ihre Flotte",
+      title: "Further benefits using BRIVE for your fleet",
       sections: [
         {
           icon: "heart.svg",
-          title: "Höhere Mitarbeiterzufriedenheit",
+          title: "Higher employee satisfaction",
           description:
-            "Durch den ausgezahlten Bonus steigert sich nicht nur die Effizienz ihrer Flotte, sondern gleichzeitig auch die Zufriedenheit ihrer Mitarbeiter."
+            "The paid bonus not only increases the efficiency of your fleet, but also the satisfaction of your employees."
         },
         {
           icon: "plus.svg",
-          title: "BRIVE berücksichtigt Ihre Bewertungsfaktoren",
+          title: "BRIVE takes your factors into account",
           description:
-            "BRIVE beschränkt sich nicht nur auf die Fahrweise an sich. Sollten weitere Faktoren wie z.B. Kundenzufriedenheit oder Pünktlichkeit berücksichtigt werden, ist dies einfach möglich."
+            "BRIVE is not limited to the driving style itself. Other factors such as customer satisfaction or punctuality can simply be added to the calculation of the reward."
         },
         {
           icon: "camera.svg",
-          title: "WER MÖCHTE SCHON ÜBERWACHT WERDEN?",
+          title: "WHO WANTS TO BE MONITORED?",
           description:
-            "BRIVE nimmt Ihnen die Arbeit Ihrer Flotte ab und informiert Sie auf Flottenebene über den Fortschritt. Überwachung der Mitarbeiter durch den Arbeitgeber ist somit unmöglich."
+            "BRIVE takes over the whole process and informs you about the improvement at fleet level. It is therefore impossible to monitor individual employees."
         }
       ]
     },
     support: {
-      title: "Gefördert durch",
+      title: "Supported by",
       eu: "europaeische_union_sozialfonds.png",
       efre: "efre.png",
       berlin: "berlin.png",
@@ -173,18 +173,18 @@ const strings = {
     },
     contact: {
       headline:
-        "Machen Sie Ihre Flotte effizienter. \n" +
-        "BRIVE kommt 2019.\n" +
-        "Seien Sie einer der Ersten, um Neuigkeiten zu erhalten.",
+        "Make your fleet more efficient. \n" +
+        "BRIVE is coming in 2019.\n" +
+        "Be one of the first to receive news.",
       newsletter: {
         tab: "Newsletter abonnieren",
-        placeholder: "E-Mail-Adresse",
+        placeholder: "Mail",
         privacy:
-          "Hiermit akzeptiere ich die Erklärung zum Datenschutz gemäß DSGVO und wünsche, dass BRIVE mich über Neuigkeiten informiert.",
-        button: "Abonnieren"
+          "I hereby accept the declaration on data protection according to GDPR and wish that BRIVE informs me about news.",
+        button: "Get news"
       },
       contact: {
-        tab: "Kontaktieren"
+        tab: "Contact"
       }
     }
   }

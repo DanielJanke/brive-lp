@@ -1,5 +1,5 @@
 import React from "react";
-import { scrollTo } from "react-static";
+import { scrollTo, Link } from "react-static";
 import { Container, Row, Col } from "react-grid-system";
 import { Title1, Title2, Text } from "../assets/primitives";
 import styled from "styled-components";
@@ -28,10 +28,15 @@ const HeaderSection = () => {
             sm={6}
             md={3}
             lg={2}
-            offset={{ xs: 3, sm: 3, md: 0 }}
+            // offset={{ xs: 3, sm: 3, md: 0 }}
           >
             <img className="margin-bottom-3" src={logoImg} />
           </Col>
+          {/* <Col xs={6} sm={3} md={3} lg={2} offset={{ md: 6, lg: 8 }}>
+            <LanguageLink href={Strings.landingPage.header.changeLanguage.link}>
+              {Strings.landingPage.header.changeLanguage.text}
+            </LanguageLink>
+          </Col> */}
         </Row>
         <Row style={{ height: 440 }} align="center">
           <ColExt sm={12} lg={6}>
@@ -103,4 +108,16 @@ const ImgContainer = styled.div`
   padding: 1rem 1rem 1rem 2rem;
   display: flex;
   flex: 1;
+`;
+
+const LanguageLink = styled.a`
+  text-align: right;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  color: #524e4e;
+
+  :hover {
+    color: #373434;
+  }
 `;
