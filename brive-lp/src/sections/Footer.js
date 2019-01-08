@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-grid-system";
 import logoImg from "../assets/img/brive_logo_white.svg";
 import styled from "styled-components";
 import { Link } from "react-static";
+import Strings from "../assets/strings";
 
 const Footer = () => {
   return (
@@ -16,13 +17,13 @@ const Footer = () => {
             </Link>
           </Col>
           <Col style={ColMargin} xs={12} sm={2} offset={{ sm: 4 }}>
-            <Link exact to="/impressum">
-              Impressum
+            <Link exact to={Strings.routing.imprint}>
+              {Strings.routing.imprintText}
             </Link>
           </Col>
           <Col style={ColMargin} xs={12} sm={2}>
-            <Link exact to="/datenschutz">
-              Datenschutzerklärung
+            <Link exact to={Strings.routing.privacePolicy}>
+              {Strings.routing.privacePolicyText}
             </Link>
           </Col>
         </RowExt>

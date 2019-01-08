@@ -28,8 +28,10 @@ const ProblemSection = () => {
             <ChartContainer>
               <AmountContainer>
                 <ChartNumber>
-                  <SmallText style={styles.upto}>bis zu</SmallText>
-                  63%
+                  <SmallText style={styles.upto}>
+                    {Strings.landingPage.intro.chartUpTo}
+                  </SmallText>
+                  {Strings.landingPage.intro.chartPercent}%
                 </ChartNumber>
               </AmountContainer>
               <PieChart
@@ -48,8 +50,8 @@ const ProblemSection = () => {
             <ChartDescription>
               <p>{Strings.landingPage.intro.chartDescription}</p>
               <ul>
-                {Strings.landingPage.intro.bulletPoints.map(point => {
-                  return <li>{point}</li>;
+                {Strings.landingPage.intro.bulletPoints.map((point, i) => {
+                  return <li key={i}>{point}</li>;
                 })}
               </ul>
             </ChartDescription>

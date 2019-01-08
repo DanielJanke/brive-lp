@@ -7,6 +7,9 @@ import Colors from "../assets/colors";
 import { Title2, SmallText } from "../assets/primitives";
 import PrimaryButton from "../view/button";
 import { media } from "../assets/styleconfig";
+import Strings from "../assets/strings";
+
+var ReactGA = require("react-ga");
 
 export default class ContactBox extends Component {
   constructor(props) {
@@ -45,7 +48,7 @@ export default class ContactBox extends Component {
                   this._setActive(1);
                 }}
               >
-                Kontaktieren
+                {Strings.landingPage.contact.contactUs}
               </ClickTitle>
             </Col>
           </Row>
@@ -71,29 +74,37 @@ export default class ContactBox extends Component {
             {/*) : (*/}
             <Form action="https://formspree.io/info@brive.io" method="POST">
               <StyledInput
-                placeholder="E-Mail-Adresse"
+                placeholder={Strings.landingPage.contact.mail}
                 name="mail"
                 type="email"
               />
-              <StyledTextArea name="text" placeholder="Ihre Nachricht" />
+              <StyledTextArea
+                name="text"
+                placeholder={Strings.landingPage.contact.message}
+              />
               <Row>
                 {/* <Col xs={1}> */}
                 {/* <input type="checkbox" id="newsletterCheck" name="message" /> */}
                 {/* </Col> */}
                 <Col xs={12}>
-                  <SmallText>
-                    Ihre Daten werden ausschließlich für die Bearbeitung Ihres
-                    Anliegens verwendet und werden nach 90 Tagen gelöscht. Hier
-                    finden Sie unsere Erklärung zum{" "}
-                    <Link exact to="/datenschutz">
-                      Datenschutz
-                    </Link>
-                    .
-                  </SmallText>
+                  <SmallText
+                    dangerouslySetInnerHTML={{
+                      __html: Strings.landingPage.contact.privacePolicyText
+                    }}
+                  />
                 </Col>
               </Row>
               <br />
-              <PrimaryButton type="submit" text="Nachricht senden" />
+              <PrimaryButton
+                type="submit"
+                onClick={() => {
+                  ReactGA.event({
+                    category: "Conversion",
+                    action: "Use Contact Form"
+                  });
+                }}
+                text={Strings.landingPage.contact.send}
+              />
             </Form>
             {/*)}*/}
           </SubArea>

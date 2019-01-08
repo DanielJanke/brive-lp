@@ -1,12 +1,16 @@
 const strings = {
   landingPage: {
+    meta: {
+      siteRoot: "https://www.brive.io",
+      title: "BRIVE - Fahrzeugflotten mit Telematik effizienter machen"
+    },
     header: {
       headline: "BRIVE hilft Fahrzeugflotten effizienter zu machen.",
       text: "Kosten senken indem gute Fahrweise belohnt wird.",
       button: "Kontaktieren",
       changeLanguage: {
-        text: "ENG",
-        link: "https://eng.brive.de"
+        text: "English",
+        link: "https://eng.brive.io"
       }
     },
     intro: {
@@ -14,6 +18,8 @@ const strings = {
       text:
         "Umso wichtiger sind deshalb motivierte Mitarbeiter, die mit Ihrer Fahrweise Rücksicht auf die Fahrzeuge, die laufenden Kosten und die Umwelt nehmen. BRIVE hilft dabei Mitarbeiter nachhaltig zu motivieren, um die Kosten Ihrer Flotte signifikant zu senken. ",
       chartDescription: "Beeinflussbarer Anteil des Fahrers an Flottenkosten",
+      chartPercent: 63,
+      chartUpTo: "Bis zu",
       bulletPoints: [
         "Kraftstoffverbrauch",
         "Unfallkosten",
@@ -172,6 +178,7 @@ const strings = {
       ]
     },
     contact: {
+      contactUs: "Kontaktieren",
       headline:
         "Machen Sie Ihre Flotte effizienter. \n" +
         "BRIVE kommt 2019.\n" +
@@ -183,10 +190,23 @@ const strings = {
           "Hiermit akzeptiere ich die Erklärung zum Datenschutz gemäß DSGVO und wünsche, dass BRIVE mich über Neuigkeiten informiert.",
         button: "Abonnieren"
       },
+      mail: "E-Mail Adresse",
+      message: "Ihre Nachricht",
+      send: "Nachricht Senden",
       contact: {
         tab: "Kontaktieren"
-      }
+      },
+      privacePolicyText:
+        'Ihre Daten werden ausschließlich für die Bearbeitung Ihres Anliegens verwendet und werden nach 90 Tagen gelöscht. Hier finden Sie unsere Erklärung zum <a href="/datenschutz"> Datenschutz </a>.'
     }
+  },
+  routing: {
+    imprint: "/impressum",
+    imprintText: "Impressum",
+    imprintComponentPath: "src/containers/Imprint_GER",
+    privacePolicy: "/datenschutz",
+    privacePolicyText: "Datenschutzerklärung",
+    privacePolicyPath: "src/containers/PrivacyPolicy_GER"
   }
 };
 

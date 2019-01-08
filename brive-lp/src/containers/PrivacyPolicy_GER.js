@@ -55,6 +55,7 @@ export default class Datenschutz extends Component {
                   <li>III. Informationen zur Datenverarbeitung</li>
                 </ul>
               </Text>
+              <Title3>I. Informationen über uns als Verantwortliche</Title3>
               <Text>
                 Verantwortlicher Anbieter dieses Internetauftritts im
                 datenschutzrechtlichen Sinne ist:
@@ -75,6 +76,8 @@ export default class Datenschutz extends Component {
               </Text>
               <Title3>II. Rechte der Nutzer und Betroffenen</Title3>
               <Text>
+                Mit Blick auf die nachfolgend noch näher beschriebene
+                Datenverarbeitung haben die Nutzer und Betroffenen das Recht
                 <ul>
                   <li>
                     auf Bestätigung, ob sie betreffende Daten verarbeitet

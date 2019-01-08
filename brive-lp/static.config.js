@@ -1,25 +1,38 @@
 import axios from "axios";
+import Strings from './src/assets/strings'
+import React from "react";
 
 export default {
+  // siteRoot: Strings.landingPage.meta.siteRoot,
   getSiteData: () => ({
-    title: "BRIVE"
+    title: Strings.landingPage.meta.title
   }),
+  Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
+    <Html lang="de-DE">
+      <Head>
+        <title>{siteData.title}</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <Body>{children}</Body>
+    </Html>
+  ),
   getRoutes: async () => {
-    const { data: posts } = await axios.get(
-      "https://jsonplaceholder.typicode.com/posts"
-    );
+    // const { data: posts } = await axios.get(
+    //   "https://jsonplaceholder.typicode.com/posts"
+    // );
     return [
       {
         path: "/",
         component: "src/containers/Home"
       },
       {
-        path: "/impressum",
-        component: "src/containers/Imprint"
+        path: Strings.routing.imprint,
+        component: Strings.routing.imprintComponentPath,
       },
       {
-        path: "/datenschutz",
-        component: "src/containers/Datenschutz"
+        path: Strings.routing.privacePolicy,
+        component: Strings.routing.privacePolicyPath,
       },
       // {
       //   path: '/about',

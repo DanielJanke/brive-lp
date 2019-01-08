@@ -12,8 +12,14 @@ import iPhone2 from "../assets/img/brive_app_iphone_2.png";
 import iPhone3 from "../assets/img/brive_app_iphone_3.png";
 import { media } from "../assets/styleconfig";
 
+import ReactGA from "react-ga";
+
 const HeaderSection = () => {
   const scrollToElement = () => {
+    ReactGA.event({
+      category: "Conversion",
+      action: "Scroll to contact"
+    });
     const element = document.getElementById("contact-box");
     scrollTo(element);
   };
@@ -32,11 +38,18 @@ const HeaderSection = () => {
           >
             <img className="margin-bottom-3" src={logoImg} />
           </Col>
-          {/* <Col xs={6} sm={3} md={3} lg={2} offset={{ md: 6, lg: 8 }}>
+          <Col
+            xs={6}
+            sm={3}
+            md={3}
+            lg={2}
+            offset={{ md: 6, lg: 8 }}
+            style={{ textAlign: "right" }}
+          >
             <LanguageLink href={Strings.landingPage.header.changeLanguage.link}>
               {Strings.landingPage.header.changeLanguage.text}
             </LanguageLink>
-          </Col> */}
+          </Col>
         </Row>
         <Row style={{ height: 440 }} align="center">
           <ColExt sm={12} lg={6}>
@@ -112,12 +125,14 @@ const ImgContainer = styled.div`
 
 const LanguageLink = styled.a`
   text-align: right;
-  display: block;
-  width: 100%;
+  display: inline-block;
   padding: 0.5rem;
   color: #524e4e;
-
+  box-sizing: border-box;
+  border: 1px solid #524e4e;
+  border-radius: 8px;
   :hover {
     color: #373434;
+    border: 1px solid #373434;
   }
 `;

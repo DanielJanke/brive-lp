@@ -1,12 +1,16 @@
 const strings = {
   landingPage: {
+    meta: {
+      siteRoot: "https://eng.brive.io",
+      title: "BRIVE - maximises efficiency of vehicle fleets with telematics"
+    },
     header: {
       headline: "BRIVE maximises efficiency of vehicle fleets.",
       text: "Reduce costs by rewarding good driving behaviour.",
       button: "Contact",
       changeLanguage: {
-        text: "DE",
-        link: "https://www.brive.de"
+        text: "German",
+        link: "https://www.brive.io"
       }
     },
     intro: {
@@ -14,6 +18,8 @@ const strings = {
       text:
         "It is therefore important to have motivated employees whose driving style respects vehicles, running costs and the environment. BRIVE motivates employees lastingly to lower the costs of your fleet significantly.",
       chartDescription: "The driver's influence on fleet costs",
+      chartPercent: 63,
+      chartUpTo: "up to",
       bulletPoints: [
         "fuel consumption",
         "accident costs",
@@ -63,27 +69,27 @@ const strings = {
         "BRIVE calculates ratings in different categories which are easy-to-understand for the driver. This gives insights into the driving style and allows targeted improvements. You will benefit from increased fleet efficiency.",
       sections: [
         {
-          title: "Anfahrverhalten",
+          title: "Acceleration",
           scoring: 80
         },
         {
-          title: "Bremsverhalten",
+          title: "Breaking",
           scoring: 67
         },
         {
-          title: "Geschwindigkeit",
+          title: "Speeding",
           scoring: 43
         },
         {
-          title: "Leerlauf",
+          title: "Idle Time",
           scoring: 58
         },
         {
-          title: "Handynutzung",
+          title: "Phone Usage",
           scoring: 91
         },
         {
-          title: "Kurvenverhalten",
+          title: "Sharp Cornering",
           scoring: 85
         }
       ]
@@ -172,6 +178,7 @@ const strings = {
       ]
     },
     contact: {
+      contactUs: "Contact Us",
       headline:
         "Make your fleet more efficient. \n" +
         "BRIVE is coming in 2019.\n" +
@@ -183,10 +190,23 @@ const strings = {
           "I hereby accept the declaration on data protection according to GDPR and wish that BRIVE informs me about news.",
         button: "Get news"
       },
+      mail: "Mail",
+      message: "Message",
+      send: "Send message",
       contact: {
         tab: "Contact"
-      }
+      },
+      privacePolicyText:
+        "Your data will be used exclusively for processing your request and will be deleted after 90 days. Here you will find our privacy policy."
     }
+  },
+  routing: {
+    imprint: "/imprint",
+    imprintText: "Imprint",
+    imprintComponentPath: "src/containers/Imprint_ENG",
+    privacePolicy: "/privacy",
+    privacePolicyText: "Privacy Policy",
+    privacePolicyPath: "src/containers/PrivacyPolicy_ENG"
   }
 };
 
