@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{163:function(e,n,t){"use strict";t.r(n);var o=t(0),a=t.n(o);n.default=function(){return a.a.createElement("div",{style:{color:"green"}},a.a.createElement("h1",null,"Heavy component loaded !"))}}}]);
+//# sourceMappingURL=components-MyComponent.0510369c.js.map

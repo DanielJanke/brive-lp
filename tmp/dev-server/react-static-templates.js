@@ -1,0 +1,19 @@
+
+
+
+import t_0 from '../../src/pages/404.js'
+import t_1 from '../../src/pages/About.js'
+import t_2 from '../../src/pages/Blog.js'
+import t_3 from '../../src/pages/index.js'
+import t_4 from '../../src/containers/Imprint_GER'
+import t_5 from '../../src/containers/PrivacyPolicy_GER'
+
+// Template Map
+export default [
+  t_0,
+t_1,
+t_2,
+t_3,
+t_4,
+t_5
+]
