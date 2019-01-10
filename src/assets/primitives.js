@@ -39,6 +39,7 @@ export const Text = styled.p`
   color: ${props =>
     props.light ? Colors.textColorLight : Colors.textColorDark};
   width: 100%;
+  text-align: ${props => (props.center ? "center" : "")};
 `;
 
 export const BigNumber = styled.p`
@@ -62,6 +63,7 @@ export const SmallText = styled.p`
   font-size: 12px;
   color: #373434;
   font-weight: 400;
+  text-align: ${props => (props.center ? "center" : "")};
 `;
 
 export const BoxGreyNumber = styled.p`

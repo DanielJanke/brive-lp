@@ -10,7 +10,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #ffffff;
   color: rgba(255,255,255,0.80);
   font-weight: 400;
   transition: all 0.2s;
@@ -18,6 +17,14 @@ a {
 
 a:hover {
   color: rgba(255,255,255,1);
+}
+
+a.dark {
+  color: rgb(82, 78, 78);
+}
+
+a.dark:hover {
+  color: rgb(55, 52, 52);
 }
 
 img {

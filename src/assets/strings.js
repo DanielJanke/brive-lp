@@ -5,7 +5,7 @@ const strings = {
       title: "BRIVE - Fahrzeugflotten mit Telematik effizienter machen"
     },
     header: {
-      headline: "BRIVE hilft Fahrzeugflotten effizienter zu machen.",
+      headline: "BRIVE macht Fahrzeugflotten effizienter.",
       text: "Kosten senken indem gute Fahrweise belohnt wird.",
       button: "Kontaktieren",
       changeLanguage: {
@@ -182,9 +182,8 @@ const strings = {
     contact: {
       contactUs: "Kontaktieren",
       headline:
-        "Machen Sie Ihre Flotte effizienter. \n" +
-        "BRIVE kommt 2019.\n" +
-        "Seien Sie einer der Ersten, um Neuigkeiten zu erhalten.",
+        "Machen Sie Ihre Flotte effizienter.",
+      subheadline: "BRIVE kommt 2019.",
       newsletter: {
         tab: "Newsletter abonnieren",
         placeholder: "E-Mail-Adresse",
@@ -199,7 +198,7 @@ const strings = {
         tab: "Kontaktieren"
       },
       privacePolicyText:
-        'Ihre Daten werden ausschließlich für die Bearbeitung Ihres Anliegens verwendet und werden nach 90 Tagen gelöscht. Hier finden Sie unsere Erklärung zum <a href="/datenschutz"> Datenschutz </a>.'
+        'Ihre Daten werden ausschließlich für die Bearbeitung Ihres Anliegens verwendet und werden nach 90 Tagen gelöscht. Hier finden Sie unsere Erklärung zum <a class="dark" href="/datenschutz"> Datenschutz </a>.'
     }
   },
   routing: {

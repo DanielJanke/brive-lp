@@ -182,9 +182,8 @@ const strings = {
     contact: {
       contactUs: "Contact Us",
       headline:
-        "Make your fleet more efficient. \n" +
-        "BRIVE is coming in 2019.\n" +
-        "Be one of the first to receive news.",
+        "Make your fleet more efficient.",
+        subheadline: "BRIVE is coming 2019.",
       newsletter: {
         tab: "Newsletter abonnieren",
         placeholder: "Mail",
@@ -199,7 +198,7 @@ const strings = {
         tab: "Contact"
       },
       privacePolicyText:
-        "Your data will be used exclusively for processing your request and will be deleted after 90 days. Here you will find our privacy policy."
+        "Your data will be used exclusively for processing your request and will be deleted after 90 days. Here you will find our <a href='/privacy' class='dark'>privacy policy</a>."
     }
   },
   routing: {

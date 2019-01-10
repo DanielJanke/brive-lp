@@ -4,7 +4,7 @@ import { Row, Col } from "react-grid-system";
 import styled from "styled-components";
 
 import Colors from "../assets/colors";
-import { Title2, SmallText } from "../assets/primitives";
+import { Title2, SmallText, Text } from "../assets/primitives";
 import PrimaryButton from "../view/button";
 import { media } from "../assets/styleconfig";
 import Strings from "../assets/strings";
@@ -29,7 +29,8 @@ export default class ContactBox extends Component {
     return (
       <React.Fragment>
         <BoxStyle>
-          <Title2 center>{this.props.headline}</Title2>
+          <Title2 center>{Strings.landingPage.contact.headline}</Title2>
+          <Text center>{Strings.landingPage.contact.subheadline}</Text>
           <Row>
             {/*<Col xs={12} sm={6}>*/}
             {/*<ClickTitle*/}
